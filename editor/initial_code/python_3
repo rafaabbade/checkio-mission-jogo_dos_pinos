@@ -1,1 +1,32 @@
-{{CODIGO INICIAL}}
+def jogo_dos_pinos(tabuleiro):
+    # Seu código aqui
+    return None
+
+print("Example:")
+print(jogo_tabuleiro(2, [[0, 1], [1, 9]]))
+
+# As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
+
+assert jogo_dos_pinos([
+    "--ooo--",
+    "--ooo--",
+    "ooooooo",
+    "ooo.ooo",
+    "ooooooo",
+    "--ooo--",
+    "--ooo--"
+]) == 4
+
+assert jogo_dos_pinos([
+    "--.o.--",
+    "--o.o--",
+    "....o..",
+    "....o..",
+    "o.o.o..",
+    "--o.o--",
+    "--o.o--"
+]) == 2
+
+
+
+print("Seu código passou pelos testes, clique em Check para avançar!")

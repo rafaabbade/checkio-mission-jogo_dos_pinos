@@ -1,18 +1,18 @@
 <!-- Describe task in general -->
 
 <p>
-    {{ENUNCIADO}}
+    O Jogo dos Pinos é um quebra-cabeça que consiste em um tabuleiro com furos em forma de cruz, inicialmente preenchido com pinos, exceto por um furo vazio no centro.</p> <img  title="example" src="{{MEDIA}}pinos1.png" alt="example" style="max-height: 300px"/> <p>O objetivo é realizar movimentos válidos para remover os pinos até restar apenas um.</p> <img  title="example" src="{{MEDIA}}pinos3.png" alt="example" style="max-height: 300px"/><p>Um movimento é válido se um pino (pivô) puder pular sobre um pino adjacente (alvo) em direção a um furo vazio (destino), removendo o pino alvo. Dada uma configuração do tabuleiro, seu programa deve determinar o número de movimentos válidos possíveis.
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> {{ENTRADA}}
+    <strong>Entrada </strong> Uma lista de 7 strings, cada uma representando uma linha do tabuleiro. Cada string contém exatamente 7 caracteres, sendo '-' (hífen) nos dois primeiros e dois últimos caracteres das linhas 1, 2, 6 e 7, 'o' (letra o minúscula) representando um pino, ou '.' (ponto) representando um furo.
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> Um inteiro representando o número de movimentos válidos na configuração do tabuleiro fornecida.
 </p>
 
 
@@ -28,7 +28,26 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    jogo_dos_pinos([
+    "--ooo--",
+    "--ooo--",
+    "ooooooo",
+    "ooo.ooo",
+    "ooooooo",
+    "--ooo--",
+    "--ooo--"
+]) >> 4
+
+jogo_dos_pinos([
+    "--.o.--",
+    "--o.o--",
+    "....o..",
+    "....o..",
+    "o.o.o..",
+    "--o.o--",
+    "--o.o--"
+]) >> 2
+
 </pre>
 {% endif %}
 </div>
