@@ -7,56 +7,36 @@
   </div>
   <div class="answer">
    <p>
-    Para encontrar todos os movimentos válidos, percorra cada célula do tabuleiro que não seja um hífen. Para cada pino encontrado ('o'), verifique as quatro direções (acima, abaixo, esquerda, direita) buscando por um padrão de um pino adjacente seguido por um furo vago. Use loops e condicionais para verificar essas condições em todas as células aplicáveis do tabuleiro.
+    Primeiro precisamos identificar todos os espaços vagos identificado pelo '.'
    </p>
+   <p>
+    Para isso, use a variação 'enumerate' do laço for. É a maneira mais eficiente de identificarmos as coordenadas dos pontos. Veja a sintaxe abaixo:
+   </p>
+               <pre class="brush: python">
+             
+   for indice1, letra1 in enumerate(palavra, start=1):
+       # indice1 vai retornar a posição da letra1 no momento da execução do 'for'
+       # letra1 é a variável de iteração do 'for', funciona da maneira que já conhecemos
+       # palavra é a palavra na qual vamos fazer as iterações, também funciona da maneira que já conhecemos
+       # start é o número que começamos a contagem. Por padrão, start vale 0
+       print(indice1, letra1) # use o print caso queira ver o funcionamento
+ 
+           
+        </pre>
   </div>
  </div>
  <div class="question-answer">
   <div class="question">
    <p>
-    3
+    Como identificar todos os movimentos válidos em uma configuração de tabuleiro do Jogo dos Pinos?
    </p>
   </div>
   <div class="answer">
    <p>
-    4
+    Para cada furo encontrado ('.'), verifique as quatro direções (acima, abaixo, esquerda, direita) buscando por um padrão de um pino adjacente seguido pelo pino que fará o movimento. Use loops e condicionais para verificar essas condições em todas as células aplicáveis do tabuleiro.
    </p>
   </div>
  </div>
- <div class="question-answer">
-  <div class="question">
-   <p>
-    5
-   </p>
-  </div>
-  <div class="answer">
-   <p>
-    6
-   </p>
-  </div>
- </div>
- <div class="question-answer">
-  <div class="question">
-   <p>
-    7
-   </p>
-  </div>
-  <div class="answer">
-   <p>
-    8
-   </p>
-  </div>
- </div>
- <div class="question-answer">
-  <div class="question">
-   <p>
-    9
-   </p>
-  </div>
-  <div class="answer">
-   <p>
-    10
-   </p>
-  </div>
+
  </div>
 </body>
