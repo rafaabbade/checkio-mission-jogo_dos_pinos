@@ -11,7 +11,7 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-        "input": [
+        "input": [[
             "--ooo--",
             "--ooo--",
             "ooooooo",
@@ -19,11 +19,11 @@ TESTS = {
             "ooooooo",
             "--ooo--",
             "--ooo--"
-        ],
+        ]],
         "answer": 4
     },
     {
-        "input": [
+        "input": [[
             "--.o.--",
             "--o.o--",
             "....o..",
@@ -31,7 +31,7 @@ TESTS = {
             "o.o.o..",
             "--o.o--",
             "--o.o--"
-        ],
+        ]],
         "answer": 2
     }
     ]
