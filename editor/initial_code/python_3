@@ -3,7 +3,15 @@ def jogo_dos_pinos(tabuleiro):
     return None
 
 print("Example:")
-print(jogo_tabuleiro(2, [[0, 1], [1, 9]]))
+print(jogo_dos_pinos([
+    "--ooo--",
+    "--ooo--",
+    "ooooooo",
+    "ooo.ooo",
+    "ooooooo",
+    "--ooo--",
+    "--ooo--"
+]))
 
 # As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
 
